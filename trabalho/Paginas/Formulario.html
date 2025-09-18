@@ -9,7 +9,7 @@
   
   <title>Paradise Coffee - Cardapio</title>
   
-  <link rel="icon" href="./Imagens/Paradise Coffee.jpg" type="image/jpg"">
+  <link rel="icon" href="../Imagens/Paradise Coffee.jpg" type="image/jpg"">
   <link rel="stylesheet" href="../Estilos/Style.css">
     
 </head>
@@ -22,7 +22,7 @@
     <header id="cabeçalho">
        <h3> Coffe Shop - Paradise Shop</h3>
 
-       <audio src="" 
+       <audio src="../Audio/Coffee Lofi ☕1 Hour Cafe Song 🎵 Stream cafe ✨cute & relaxing music 🍪 Make Your Day Better [01dn67QubYQ].mp3" 
     controls>
       
       </audio>
@@ -33,7 +33,7 @@
 <!--Area dos links do site para as outras areas dos sites sendo eles:
  - Sobre: Falando mas sobre o Processo de criação o objetivo do site;
  - Cardapio: contendo os tipos de Cafe que pode ser feito e pedido;
- - Formulario: Local que vai registra os dados do individuo para comentario e efetuar o pedido-->
+ - Index: o Inicio do site-->
 
   <nav id="link">
 
@@ -46,15 +46,126 @@
   </nav>
     
 
+  <main>
+    <h1>Formulário de Cadastro – Paradise Coffee</h1>
+
+    <form action="#" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <label>Nome: <input type="text" name="nome" required></label><br>
+        <label>Email: <input type="email" name="email" required></label><br>
+        <label>Senha: <input type="password" name="senha"></label><br>
+        <label>Data de Nascimento: <input type="date" name="nascimento"></label><br>
+        <label>Telefone: <input type="tel" name="telefone"></label><br>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferências</legend>
+        <p>Bebida favorita:</p>
+        <label><input type="radio" name="bebida" value="cafe"> Café</label>
+        <label><input type="radio" name="bebida" value="cha"> Chá</label>
+        <label><input type="radio" name="bebida" value="suco"> Suco</label><br><br>
+
+        <p>Adicionais:</p>
+        <label><input type="checkbox" name="acucar"> Açúcar</label>
+        <label><input type="checkbox" name="leite"> Leite</label>
+        <label><input type="checkbox" name="chantilly"> Chantilly</label><br><br>
+
+        <label for="tamanho">Tamanho do copo:</label>
+        <select name="tamanho" id="tamanho">
+          <option value="p">Pequeno</option>
+          <option value="m">Médio</option>
+          <option value="g">Grande</option>
+
+
+
+        <p>Forma de pagamento</p>
+
+        <input type="radio" name="pagamento-debito" id="pagamento-depito">
+        <label for="pagamento-debito">Debito</label>
+        <br/>
+
+        <input type="radio" name="pagamento-credito" id="pagamento-credito">
+        <label for="pagamento-credito">Credito</label>
+        <br/>
+
+        <input type="radio" name="pagamento-Pix" id="pagamento-Pix">
+        <label for="pagamento-Pix">Pix</label>
+        <br/>
+      
+        </select>
+      </fieldset>
+
+      <fieldset>
+        <legend>Outras Informações</legend>
+        <label>Mensagem: <textarea name="mensagem"></textarea></label><br>
+        <label>Horário preferido: <input type="time" name="horario"></label><br>
+        <label>Número de visitas: <input type="number" name="visitas" min="1" max="100"></label>
+      </fieldset>
+
+      <button type="submit">Enviar</button>
+    </form>
+
+
+    
+    <section>
+      <h2>Listas de Preferências</h2>
+      <ul>
+        <li>Expresso</li>
+        <li>Latte</li>
+        <li>Capuccino</li>
+        <li>Macchiato</li>
+        <li>Chocolate Quente</li>
+      </ul>
+      <ol>
+        <li>Croissant</li>
+        <li>Bolo de Cenoura</li>
+        <li>Cookies</li>
+      </ol>
+      <ul>
+        <li>Leite Integral</li>
+        <li>Leite Desnatado</li>
+        <li>Leite Vegetal</li>
+      </ul>
+      <ol>
+        <li>Com açúcar</li>
+        <li>Sem açúcar</li>
+      </ol>
+      <ul>
+        <li>Quente</li>
+        <li>Gelado</li>
+      </ul>
+      <ol>
+        <li>Para viagem</li>
+        <li>Consumir no local</li>
+      </ol>
+    </section>
+
+</main>
 
 
 <!-- Rodape contento contatos, o ano de Criação e o nome do criador do site-->
   <footer id="rodape">
     <div id="contatos-informaçoes">
 
-      <div id="contatos">
+    <div id="contatos">
+        <a href="" id="link whatzap"><img src="../Imagens/Design_sem_nome3.png" 
+          rel="icon" type="image/png" alt="logo e link do whatzap" id="logo whatzap"
+          height="75" width="75"></a>
 
-      </div>
+        <a href="" id="link facebook"><img src="../Imagens/Design_sem_nome2.png" 
+          rel="icon" type="image/png" alt="logo e link do facebook" id="logo facebook"
+          height="75" width="75"></a>
+
+        <a href="" id="link likedin"><img src="../Imagens/Design_sem_nome1.png" 
+          rel="icon" type="image/png" alt="logo e link do likedin" id="logo likedin"
+          height="75" width="75"></a>
+
+        <a href="" id="link instragram"><img src="../Imagens/Design_sem_nome.png" 
+          rel="icon" type="image/png" alt="logo e link do instragram" id="logo instragram"
+          height="75" width="75"></a>
+
+    </div>
       <div id="informação">
 
         <p>Criador - André Yuri Alves Silva</p>
