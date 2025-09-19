@@ -20,12 +20,12 @@
 <div id="menu">
   <div id="root">
     <header id="cabeçalho">
-       <h3> Coffe Shop - Paradise Shop</h3>
 
-       <audio src="../Audio/Coffee Lofi ☕1 Hour Cafe Song 🎵 Stream cafe ✨cute & relaxing music 🍪 Make Your Day Better [01dn67QubYQ].mp3" 
-    controls>
-      
-      </audio>
+      <h3> Coffe Shop - Paradise Shop</h3>
+      <img src="../Imagens/Paradise Coffee.jpg" alt="logo da cafeteria" width="100px" height="100px">
+      <audio src="../Audio/Coffee Lofi ☕1 Hour Cafe Song 🎵 Stream cafe ✨cute & relaxing music 🍪 Make Your Day Better [01dn67QubYQ].mp3" 
+    controls></audio>
+
     </header>
   </div>
 </div>
@@ -39,7 +39,7 @@
 
     <a class="links" id="Index" href="../index.html">Inicio</a>
     <a class="links" id="sobre" href="./sobre.html">Sobre</a>
-    <a class="links" id="Cardapio" href="./Cardapio.html">Comentarios</a>
+    <a class="links" id="Cardapio" href="./Cardapio.html">Cardapio</a>
     
 
 
@@ -76,11 +76,13 @@
           <option value="p">Pequeno</option>
           <option value="m">Médio</option>
           <option value="g">Grande</option>
+          <br/>
+        </select>
+      </fieldset>
 
-
-
-        <p>Forma de pagamento</p>
-
+      <fieldset>
+        <label for="pagamento"> Forma de pagamento</label><br/>
+        
         <input type="radio" name="pagamento-debito" id="pagamento-depito">
         <label for="pagamento-debito">Debito</label>
         <br/>
@@ -93,13 +95,11 @@
         <label for="pagamento-Pix">Pix</label>
         <br/>
       
-        </select>
       </fieldset>
-
       <fieldset>
         <legend>Outras Informações</legend>
         <label>Mensagem: <textarea name="mensagem"></textarea></label><br>
-        <label>Horário preferido: <input type="time" name="horario"></label><br>
+        <label>Horário de Preferência a ser atendido: <input type="time" name="horario"></label><br>
         <label>Número de visitas: <input type="number" name="visitas" min="1" max="100"></label>
       </fieldset>
 

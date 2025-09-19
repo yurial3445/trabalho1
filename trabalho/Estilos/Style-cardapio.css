@@ -1,35 +1,141 @@
-#root{
-
-    background-color: bisque;
-    width: 100%;
-    height: 100px;
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f3ed; /* Fundo suave */
+    color: #4b3832; /* Cor do texto principal */
+    margin: 0;
+    padding: 0;
 }
 
-header{
-    display: table-header-group;
+h1, h2, h3 {
+    color: #662d07; /* Cor para os títulos */
 }
 
-#image{
-    transition: all 0.3s ease;
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
-#image:hover{
-transform: translateY(-15px);
-  box-shadow: 0px 10px 20px rgba(255, 232, 217, 0.9);
-}
-main{
-    border: 15px bisque;
+a:hover {
+    text-decoration: underline;
+    color: #8c5e3d;
 }
 
-nav{
-    display: block;
-    background-color: burlywood;
+/* Header (Cabeçalho) */
+header {
+    background-color: #ffe8d9;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0c8b6;
+}
+
+header img {
+    border-radius: 50%; /* Borda arredondada para o logo */
+    border: 2px solid #8c5e3d;
+}
+
+/* Navegação */
+nav {
+    background-color: #bfa182;
     width: 100%;
     height: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-footer{
-    background-color:rgba(102, 45, 7, 0.9);
-    width: 100%;
-    height: 180px;
+.links {
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease;
+}
+
+.links:hover {
+    background-color: #a3876e;
+    border-radius: 5px;
+}
+
+/* Conteúdo Principal (Cardápio) */
+.conteudo-cardapio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.cardapio-item {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardapio-item:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.cardapio-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.cardapio-item p {
+    font-weight: bold;
+    color: #662d07;
+    margin-top: 15px;
+}
+
+.cardapio-item ul {
+    list-style-position: inside;
+    text-align: left;
+    padding: 0;
+    margin-top: 5px;
+}
+
+.cardapio-item li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* Rodapé */
+footer {
+    background-color: #662d07;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+#contatos {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#contatos img {
+    height: 75px;
+    width: 70px;
+    transition: transform 0.3s ease;
+}
+
+#contatos img:hover {
+    transform: scale(1.1);
+}
+
+#informação p {
+    margin: 5px 0;
 }
