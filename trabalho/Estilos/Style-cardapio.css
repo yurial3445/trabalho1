@@ -1,46 +1,47 @@
-/* Estilos Gerais */
+/* ===== Estilos Gerais ===== */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f7f3ed; /* Fundo suave */
-    color: #4b3832; /* Cor do texto principal */
+    background-color: rgba(255, 245, 233);
+    color: #4b3832;
     margin: 0;
     padding: 0;
 }
 
 h1, h2, h3 {
-    color: #662d07; /* Cor para os títulos */
+    color: #662d07;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+  
 }
 
-a:hover {
-    text-decoration: underline;
-    color: #8c5e3d;
-}
 
-/* Header (Cabeçalho) */
+/* ===== Header ===== */
 header {
     background-color: #ffe8d9;
-    padding: 10px 20px;
+    padding: 15px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     border-bottom: 2px solid #e0c8b6;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h3 {
+    margin: 0;
 }
 
 header img {
-    border-radius: 50%; /* Borda arredondada para o logo */
+    border-radius: 50%;
     border: 2px solid #8c5e3d;
 }
 
-/* Navegação */
+/* ===== Navegação ===== */
 nav {
     background-color: #bfa182;
-    width: 100%;
-    height: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,42 +52,42 @@ nav {
     color: white;
     font-weight: bold;
     padding: 10px 15px;
-    transition: background-color 0.3s ease;
-}
-
-.links:hover {
-    background-color: #a3876e;
     border-radius: 5px;
 }
 
-/* Conteúdo Principal (Cardápio) */
+/* ===== Cardápio ===== */
 .conteudo-cardapio {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 40px;
-    padding: 20px;
+    padding: 30px;
 }
 
 .cardapio-item {
     background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
     padding: 20px;
     text-align: center;
-    width: 300px;
+    width: 320px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .cardapio-item:hover {
-    transform: translateY(-15px);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    transform: translateY(-12px);
+    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.2);
 }
 
 .cardapio-item img {
     max-width: 100%;
     height: auto;
-    border-radius: 8px;
+    border-radius: 10px;
+    transition: transform 0.4s ease;
+}
+
+.cardapio-item img:hover {
+    transform: scale(1.05);
 }
 
 .cardapio-item p {
@@ -99,24 +100,24 @@ nav {
     list-style-position: inside;
     text-align: left;
     padding: 0;
-    margin-top: 5px;
+    margin-top: 8px;
 }
 
 .cardapio-item li {
-    font-size: 14px;
+    font-size: 15px;
     line-height: 1.6;
 }
 
-/* Rodapé */
+/* ===== Rodapé ===== */
 footer {
     background-color: #662d07;
     color: white;
-    padding: 20px;
+    padding: 25px 15px;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
+    gap: 20px;
 }
 
 #contatos {
@@ -133,9 +134,28 @@ footer {
 }
 
 #contatos img:hover {
-    transform: scale(1.1);
+    transform: scale(1.15);
 }
 
 #informação p {
     margin: 5px 0;
+    font-size: 14px;
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .conteudo-cardapio {
+        gap: 25px;
+        padding: 20px;
+    }
+
+    .cardapio-item {
+        width: 100%;
+        max-width: 350px;
+    }
 }

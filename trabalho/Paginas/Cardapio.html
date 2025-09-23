@@ -1,137 +1,85 @@
 <!DOCTYPE html>
-
 <html lang="pt-br">
 <head>
-  
   <meta charset="UTF-8">  
   <meta name="description" content="Paradise Coffe">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Paradise Coffee - Cardapio</title>
+  <title>Paradise Coffee - Cardápio</title>
   
-  <link rel="icon" href="../Imagens/Paradise Coffee.jpg" type="image/jpg"">
+  <link rel="icon" href="../Imagens/Paradise Coffee.jpg" type="image/jpg">
   <link rel="stylesheet" href="../Estilos/Style-cardapio.css">
-    
 </head>
 
 <body>
-  <!-- area que contem o titulo e o controle de musica.-->
-<div id="menu">
-  <div id="root">
-    <header id="cabeçalho">
+  <!-- Cabeçalho -->
+  <header>
+    <h3>Coffe Shop - Paradise Shop</h3>
+    <img src="../Imagens/Paradise Coffee.jpg" alt="logo da cafeteria" width="100" height="100">
+    <audio src="../Audio/Coffee.mp3" controls autoplay></audio>
+  </header>
 
-      <h3> Coffe Shop - Paradise Shop</h3>
-      <img src="../Imagens/Paradise Coffee.jpg" alt="logo da cafeteria" width="100px" height="100px">
-      <audio src="../Audio/Coffee Lofi ☕1 Hour Cafe Song 🎵 Stream cafe ✨cute & relaxing music 🍪 Make Your Day Better [01dn67QubYQ].mp3" 
-    controls>
-      </audio>
-
-    </header>
-  </div>
-
-
-<!--Area dos links do site para as outras areas dos sites sendo eles:
- - Sobre: Falando mas sobre o Processo de criação o objetivo do site;
- - Index: o Inicio do site;
- - Formulario: Local que vai registra os dados do individuo para comentario e efetuar o pedido.-->
-
-  <nav id="link">
-
-    <a class="links" id="Index" href="../Index.html">Inicio</a>
-    <a class="links" id="sobre" href="./Sobre.html">Sobre</a>
-    <a class="links" id="formulario" href="./Formulario.html">Comentarios</a>
-    
+  <!-- Navegação -->
+  <nav>
+    <a class="links" href="../Index.html">Início</a>
+    <a class="links" href="./Sobre.html">Sobre</a>
+    <a class="links" href="./Formulario.html">Formularios</a>
   </nav>
-</div>
 
-<div>
-
-  <div id="img Cappucino">
-    <img class="image" src="../Imagens/cappucino.jpg" alt="Cappucino"
-    width="500px" height="350px">
-
-    <p>Cappucino Ingredientes:</p>
-    <ul>
-      <li>Um terço de café Expresso</li>
-      <li>Um terço de leite vaporizado</li>
-      <li>um terço de esouma de leite vaporizado</li>
-    </ul>
-  </div>
-
-  <div id="img Chocolate">
-    <img class="image" src="../Imagens/chocolate.jpg" alt="Chocolate Quente"
-    width="500px" height="350px">
-
-    <p>Chocolate Quente Ingredientes:</p>
-    <ul>
-      <li>Chocolate em po</li>
-      <li>Açucar</li>
-      <li>Um terço de leite </li>
-      <li>Extrato de baunilha</li>
-    </ul>
-  </div>
-
-  <div id="img Lattema">
-    <img class="image" src="../Imagens/Lattema.jpg" alt="Latte Macchiato"
-    width="500px" height="300">
-
-    <p>Latte Macchiato Ingredientes</p>
-    <ul>
-      <li>40 ml de café</li>
-      <li>100 ml de leite frio</li>
-      <li>Açucar</li>
-    </ul>
-  </div>
-
-  <div id="img expresso">
-    <img class="image" src="../Imagens/expresso.jpg" alt="Café Expresso"
-  width="" height="">
-  
-    <p>Café Expresso Ingredientes:</p>
-    <ul>
-      <li> Cafe em pó puro para programa 7 dias seguidos</li>
-    </ul>
-  </div>
-</div>
-
-
-
-
-
-
-<!-- Rodape contento contatos, o ano de Criação e o nome do criador do site.-->
-  <footer id="rodape">
-    <div id="contatos-informaçoes">
-
-      <div id="contatos">
-        
-        <a href="" id="link whatzap"><img src="../Imagens/Design_sem_nome3.png" 
-          rel="icon" type="image/png" alt="logo e link do whatzap" id="logo whatzap"
-          height="75" width="70"></a>
-
-        <a href="" id="link facebook"><img src="../Imagens/Design_sem_nome2.png" 
-          rel="icon" type="image/png" alt="logo e link do facebook" id="logo facebook"
-          height="75" width="70"></a>
-
-        <a href="" id="link likedin"><img src="../Imagens/Design_sem_nome1.png" 
-          rel="icon" type="image/png" alt="logo e link do likedin" id="logo likedin"
-          height="75" width="70"></a>
-
-        <a href="" id="link instragram"><img src="../Imagens/Design_sem_nome.png" 
-          rel="icon" type="image/png" alt="logo e link do instragram" id="logo instragram"
-          height="75" width="70"></a>
-
-      </div>
-      <div id="informação">
-
-        <p>Criador - André Yuri Alves Silva</p>
-        <p>@2025 - Todos os direitos reservados</p>
-
-      </div>
+  <!-- Conteúdo Cardápio -->
+  <section class="conteudo-cardapio">
+    <div class="cardapio-item">
+      <img src="../Imagens/cappucino.jpg" alt="Cappucino" width="500" height="350">
+      <p>Cappucino Ingredientes:</p>
+      <ul>
+        <li>Um terço de café Expresso</li>
+        <li>Um terço de leite vaporizado</li>
+        <li>Um terço de espuma de leite vaporizado</li>
+      </ul>
     </div>
 
+    <div class="cardapio-item">
+      <img src="../Imagens/chocolate.jpg" alt="Chocolate Quente" width="500" height="350">
+      <p>Chocolate Quente Ingredientes:</p>
+      <ul>
+        <li>Chocolate em pó</li>
+        <li>Açúcar</li>
+        <li>Um terço de leite</li>
+        <li>Extrato de baunilha</li>
+      </ul>
+    </div>
+
+    <div class="cardapio-item">
+      <img src="../Imagens/Lattema.jpg" alt="Latte Macchiato" width="500" height="300">
+      <p>Latte Macchiato Ingredientes:</p>
+      <ul>
+        <li>40 ml de café</li>
+        <li>100 ml de leite frio</li>
+        <li>Açúcar</li>
+      </ul>
+    </div>
+
+    <div class="cardapio-item">
+      <img src="../Imagens/expresso.jpg" alt="Café Expresso" width="500" height="300">
+      <p>Café Expresso Ingredientes:</p>
+      <ul>
+        <li>Café em pó puro</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Rodapé -->
+  <footer>
+    <div id="contatos">
+      <a href="#"><img src="../Imagens/Design_sem_nome3.png" alt="Whatsapp"></a>
+      <a href="#"><img src="../Imagens/Design_sem_nome2.png" alt="Facebook"></a>
+      <a href="#"><img src="../Imagens/Design_sem_nome1.png" alt="LinkedIn"></a>
+      <a href="#"><img src="../Imagens/Design_sem_nome.png" alt="Instagram"></a>
+    </div>
+    <div id="informação">
+      <p>Criador - André Yuri Alves Silva</p>
+      <p>@2025 - Todos os direitos reservados</p>
+    </div>
   </footer>
-
-
-  
 </body>
+</html>
